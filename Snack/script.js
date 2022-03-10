@@ -19,3 +19,32 @@ console.log('snack 2')
 console.log('partenza:', animals)
 console.log('fine', mammiferi);
 console.log('----------------------')
+
+
+const persone = [
+    {
+        nome: 'Luca',
+        cognome: 'ciacia',
+        età: 987
+    },
+    {
+        nome: 'Valentina',
+        cognome: 'cia',
+        età: 22
+    },
+    {
+        nome: 'Marco',
+        cognome: 'colli',
+        età: 15
+    },
+    {
+        nome: 'Gianni',
+        cognome: 'giannini',
+        età: 13
+    },
+]
+
+const info = persone.map(element => `${element.nome} ${element.cognome} ha ${element.età} anni quindi` + (element.età >= 18 ? ' può guidare' : ' non può ancora guidare legalmente'));
+
+console.log('Snack 3')
+console.log(info)
